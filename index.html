@@ -165,6 +165,18 @@ color: gray;
       flex-direction: row;
       justify-content: space-between;
   }
+  .rightlast-area >img{
+    height: 650px;
+    width: 830px;
+    position: relative;
+    /* left: 100px; */
+    margin-top: 100px;
+    transform: scale(1.5);
+    animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+    
+}
 
   .left-area{
     /* background-color: gray; */
@@ -269,7 +281,41 @@ lottie-player{
     width: 330px;
     position: relative;
     top: -100px;
+    animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
 }
+
+span{
+    animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
     </style>
 </head>
 <body>
@@ -290,7 +336,7 @@ lottie-player{
                     </div>
         <div class="left-area">
             <h1>Cineture - Android App</h1>
-            <h2>Hi all ! I'm Akash Mane👋</h2>
+            <h2>Hi all ! I'm Akash Mane <span> 👋</span></h2>
            
             <h3>& I Develope a New Awesome App for watching movies with free of cost  , Here you can watch or Download
                 any Movie or Web series . OTT Platform like Netflix , Amazon Prime , Disney Hotstar etc.  Movie's & Show's are
